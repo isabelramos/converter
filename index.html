@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
 	<form>
-		<label for="firstname">Enter temperature value here:</label>
+		<label for="enter-temp">Enter temperature value here:</label>
 		<br>
 		<input type="text" name="temp" id="field" required value="">
 		<br>
@@ -14,13 +15,14 @@
 
 
 		<br><br>
-		Fahrenheit<input type="radio" name="temp" value="1" placeholder="1">
-		Celsius<input type="radio" name="temp" value="2" placeholder="2">
+		Fahrenheit<input type="radio" name="temp" id="fahrenheit" placeholder="1" checked>
+		Celsius<input type="radio" name="temp" id="celsius" placeholder="2">
 
-		<div id="converter"></div>
+		<br><br>
+		<div id="converted-temp"></div>
 
 		<br>
-        <button type="submit">CONVERT!</button>
+        <button type="button" id="converter">CONVERT!</button>
 	</form>
 
 	<script type="text/javascript" src="converter.js"></script>
